@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: cerne-oss
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: cerne-pgdata
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=256"
+      - key: DATA_DIR
+        value: /data/pgdata
+      - key: TRUST_PROXY
+        value: "true"
+      - key: SEED_SAMPLE_PROJECT
+        value: "true"
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: LLM_BASE_URL
+        value: https://api.openai.com/v1
+      - key: LLM_MODEL
+        value: gpt-4o-mini
+      - key: LLM_API_KEY
+        sync: false

@@ -1,0 +1,334 @@
+/* Fonts are loaded non-blockingly via <link rel="preload"> in index.html.
+   DO NOT add @import url() here — it creates a render-blocking serial waterfall
+   inside the CSS bundle. SF Mono is a system font (no import needed). */
+
+@tailwind base;
+/* Cache bust: 2 */
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-family: var(--font-sans);
+}
+
+body.app-layout {
+  overflow: hidden;
+}
+
+@layer base {
+  :root {
+    /* BACKGROUND: "Gallery White" 
+       Cool, crisp white. No warmth. 
+       This feels technical and clean.
+    */
+    --background: 210 20% 99%;
+    /* #F8F9FA */
+    --foreground: 222 47% 11%;
+    /* #0F172A (Deep Slate) */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* PRIMARY: "Electric Cobalt" 
+       Vibrant, digital, precise. 
+       Use this for your "New Project" buttons.
+    */
+    --primary: 221 83% 45%;
+    /* Darker Cobalt */
+    /* #2563EB (Inter Blue) -> Darker */
+    --primary-foreground: 0 0% 100%;
+
+    /* SECONDARY: "Cool Steel" 
+       For secondary buttons or active states. 
+       Replaces the Clay. It's subtle and industrial.
+    */
+    --secondary: 210 40% 96%;
+    /* #F1F5F9 */
+    --secondary-foreground: 222 47% 11%;
+
+    /* MUTED: "Vapor"
+       For backgrounds of sidebars/borders.
+    */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* ACCENT: "Highlight"
+       For hover states in menus.
+    */
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    /* PREMIUM: "Gallery Gold" 
+       For "Pro" AI features. 
+       Metallic, sophisticated, effectively "Gold Tier".
+    */
+    --premium: 43 74% 49%;
+    /* #D97706 (Amber/Gold) */
+    --premium-foreground: 0 0% 100%;
+
+    --radius: 0.375rem;
+    /* Swiss micro-radius (6px) */
+
+    /* Hairline Architectural Shadows (Light) */
+    --shadow-2xs: 0 1px 2px 0 rgb(15 23 42 / 0.03);
+    --shadow-xs: 0 1px 2px 0 rgb(15 23 42 / 0.05);
+    --shadow-sm: 0 1px 3px 0 rgb(15 23 42 / 0.06), 0 1px 2px -1px rgb(15 23 42 / 0.06);
+    --shadow-md: 0 4px 6px -1px rgb(15 23 42 / 0.07), 0 2px 4px -2px rgb(15 23 42 / 0.07);
+    --shadow-lg: 0 10px 15px -3px rgb(15 23 42 / 0.08), 0 4px 6px -4px rgb(15 23 42 / 0.08);
+    --shadow-xl: 0 20px 25px -5px rgb(15 23 42 / 0.08), 0 8px 10px -6px rgb(15 23 42 / 0.08);
+    --shadow-2xl: 0 25px 50px -12px rgb(15 23 42 / 0.15);
+
+    /* SIDEBAR: "Deep Archive"
+       Let's make the sidebar dark to anchor the light content.
+       This creates the "Container" feel.
+    */
+    --sidebar-background: 222 47% 11%;
+    /* Deep Slate */
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 20%;
+    --sidebar-ring: 221 83% 53%;
+
+    --font-heading: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: "Crimson Pro", Georgia, serif;
+    --font-mono: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+
+    /* Sentiment Colors (Light) */
+    --chart-positive: #059669;
+    --chart-neutral: #64748b;
+    --chart-negative: #e11d48;
+  }
+
+  .dark {
+    /* DARK MODE: "Sublime Ink" */
+    --background: 210 31% 6%;
+    /* #0B1015 */
+    --foreground: 210 73% 96%;
+    /* #F0F6FC */
+
+    --card: 215 21% 11%;
+    /* #161B22 */
+    --card-foreground: 210 73% 96%;
+
+    --popover: 215 21% 11%;
+    --popover-foreground: 210 73% 96%;
+
+    --primary: 217 91% 48%;
+    /* Cobalt tuned for WCAG AA >= 4.5:1 with white text */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 21% 16%;
+    /* Slightly lighter than card */
+    --secondary-foreground: 210 73% 96%;
+
+    --muted: 215 21% 16%;
+    --muted-foreground: 212 9% 58%;
+    /* #8B949E */
+
+    --accent: 215 21% 16%;
+    --accent-foreground: 210 73% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 21% 20%;
+    --input: 215 21% 20%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Hairline Architectural Shadows (Dark) */
+    --shadow-2xs: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.5);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.6), 0 2px 4px -2px rgb(0 0 0 / 0.6);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.7), 0 4px 6px -4px rgb(0 0 0 / 0.7);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7), 0 8px 10px -6px rgb(0 0 0 / 0.7);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.9);
+
+    /* Sentiment Colors (Dark - Softer/Pastel) */
+    --chart-positive: #10b981;
+    --chart-neutral: #94a3b8;
+    --chart-negative: #f43f5e;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  /* Reserved exclusively for verbatim narrative story excerpts & quotes */
+  .font-story-quote {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+
+  /* Smooth Theme Transition: animates color-scheme properties on dark/light toggle.
+     Note: Now scoped to .theme-transition to prevent initial paint thrashing. */
+  .theme-transition *,
+  .theme-transition *::before,
+  .theme-transition *::after {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  /* Respect users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0ms;
+    }
+  }
+}
+
+/* Additional utility classes for our brand colors */
+@layer components {
+  .bg-brand-background {
+    background-color: hsl(var(--background));
+  }
+
+  .bg-brand-primary {
+    background-color: hsl(var(--primary));
+  }
+
+  .text-brand-primary {
+    color: hsl(var(--primary));
+  }
+
+  .bg-brand-secondary {
+    background-color: hsl(var(--secondary));
+  }
+
+  .text-brand-secondary {
+    color: hsl(var(--secondary));
+  }
+
+  .bg-brand-accent {
+    background-color: hsl(var(--accent));
+  }
+
+  .text-brand-accent {
+    color: hsl(var(--accent));
+  }
+
+  .form-container {
+    @apply bg-white p-4 rounded-md shadow-sm border border-gray-100;
+  }
+
+  .force-light {
+    --background: 210 20% 99%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 221 83% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.1rem;
+
+    /* Ensure direct application */
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  @keyframes soft-pulse {
+
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      filter: drop-shadow(0 0 0 rgba(93, 63, 211, 0));
+    }
+
+    50% {
+      opacity: 0.95;
+      transform: scale(1.02);
+      filter: drop-shadow(0 0 8px rgba(93, 63, 211, 0.3));
+    }
+  }
+
+  .animate-soft-pulse {
+    animation: soft-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 5px hsl(var(--primary) / 0);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+      transform: scale(1.02);
+    }
+  }
+
+  .animate-glow {
+    animation: glow-pulse 2.5s ease-in-out infinite;
+  }
+
+  @keyframes icon-glow-pulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 0 hsl(var(--primary) / 0));
+      transform: scale(1);
+    }
+    50% {
+      filter: drop-shadow(0 0 5px hsl(var(--primary) / 0.6));
+      transform: scale(1.2);
+    }
+  }
+
+  .animate-icon-glow {
+    animation: icon-glow-pulse 2s ease-in-out infinite;
+  }
+}

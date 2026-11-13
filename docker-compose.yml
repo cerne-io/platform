@@ -1,0 +1,25 @@
+services:
+  cerne:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-3000}:3000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      DATA_DIR: /data/pgdata
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      ALLOW_UNAUTHENTICATED_ADMIN: ${ALLOW_UNAUTHENTICATED_ADMIN:-}
+      SESSION_SECRET: ${SESSION_SECRET:-}
+      SEED_SAMPLE_PROJECT: ${SEED_SAMPLE_PROJECT:-true}
+      TRUST_PROXY: ${TRUST_PROXY:-false}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4o-mini}
+    volumes:
+      - ./cerne-data:/data
+    restart: unless-stopped

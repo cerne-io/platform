@@ -1,0 +1,118 @@
+{
+    "public": {
+        "title": "Deel je verhaal",
+        "loading": "Interview wordt geladen...",
+        "error": {
+            "load": "Kan interview niet laden",
+            "config": "Dit interview is nog niet geconfigureerd.",
+            "config_admin": "Geen verhaalvraag gevonden voor dit project.",
+            "contact": "Neem contact op met de projecteigenaar."
+        },
+        "ready": {
+            "title": "Klaar om je verhaal te delen",
+            "prompt": "We horen graag over:"
+        },
+        "button": {
+            "start": "Start interview",
+            "starting": "Bezig met starten...",
+            "send": "Verzenden",
+            "export": "Exporteren",
+            "reset": "Resetten",
+            "share_another": "Nog een ervaring delen?",
+            "submit": "Dien je verhaal in",
+            "submitting": "Bezig met indienen...",
+            "skip": "Overslaan",
+            "submit_response": "Indienen"
+        },
+        "status": {
+            "thinking": "Nadenken...",
+            "completed": "Interview voltooid en opgeslagen!",
+            "thank_you": "Bedankt voor het delen van je verhaal."
+        },
+        "input": {
+            "placeholder": "Typ hier je reactie..."
+        },
+        "unavailable_domain": "Deze inhoud is niet beschikbaar op dit domein.",
+        "form": {
+            "write_story": "Verhaal schrijven",
+            "record_story": "Verhaal opnemen",
+            "your_story": "Je verhaal",
+            "placeholder": "Vertel ons je verhaal...",
+            "recording": {
+                "instructions_title": "Opname-instructies",
+                "instructions": "Klik op \"Opname starten\" en spreek duidelijk in je microfoon. Als je klaar bent, klik je op \"Voltooien\" om je opname af te ronden.",
+                "error_title": "Opnamefout",
+                "ready": "Audio-opname klaar voor verzending",
+                "permission_needed": "We hebben toegang tot je microfoon nodig om beschikbare apparaten weer te geven en de opname te starten.",
+                "enable_mic": "Microfoontoegang inschakelen",
+                "audio_saved_notice": "De audiorespons wordt alleen opgeslagen zodat de maker van de enquête de transcriptie kan controleren of corrigeren.",
+                "select_mic": "Microfoon",
+                "choose_mic": "Selecteer microfoon",
+                "button": {
+                    "start": "Opname starten",
+                    "pause": "Pauze",
+                    "resume": "Hervatten",
+                    "finish": "Voltooien"
+                }
+            },
+            "story_title": {
+                "label": "Voeg een titel of hashtag toe voor je verhaal *",
+                "placeholder": "Geef je verhaal een betekenisvolle titel of hashtag"
+            },
+            "emotional_response": {
+                "question": "Hoe voel je je over de ervaring die je hebt gedeeld?",
+                "options": {
+                    "enthusiastic": "Enthousiast",
+                    "confused": "Verward",
+                    "frustrated": "Gefrustreerd",
+                    "engaged": "Betrokken",
+                    "other": "Anders"
+                },
+                "other_placeholder": "Beschrijf hoe je je voelde..."
+            },
+            "card": {
+                "header_fallback": "Deel je verhaal",
+                "subheader_fallback": "Help ons je ervaring te begrijpen door hieronder je verhaal te delen."
+            },
+            "comments": {
+                "label": "Is er nog iets dat je zou willen delen over deze ervaring?",
+                "placeholder": "Voeg hier extra gedachten toe..."
+            },
+            "headers": {
+                "about_experience": "Over je ervaring",
+                "about_you": "Over jou",
+                "positioning_questions": "Positioneringsvragen"
+            },
+            "click_drag": "Klik of sleep om je reactie te positioneren",
+            "prefer_not_to_say": "Liever niet zeggen"
+        },
+        "interview": {
+            "askTitle": "Bedankt voor het delen van je verhaal! Kun je het een titel of hashtag geven die de essentie weergeeft?",
+            "askEmotion": "Nu, hoe voel je je over de ervaring die je hebt gedeeld?",
+            "askAdditionalComments": "Bedankt. Is er nog iets dat je zou willen delen over deze ervaring?",
+            "askAdditionalCommentsParticipant": "Bedankt voor het beantwoorden van die vragen. Is er nog iets dat je zou willen delen over deze ervaring?",
+            "participantTransition": "Bedankt voor het delen. Voordat we afsluiten, heb ik nog een paar extra vragen om je beter te leren kennen. Je kunt die vragen altijd overslaan als je wilt.",
+            "concludingTransition": "Je hebt alle gestructureerde vragen beantwoord. Stel nu EEN laatste open vraag om eventuele aanvullende gedachten of ervaringen van de deelnemer vast te leggen.",
+            "transitionToSliders": "Bedankt voor het delen van die context. Nu zou ik graag je ervaring op een paar schalen begrijpen.",
+            "transitionToTriangles": "Bedankt voor het delen van die context. Nu heb ik een paar positioneringsvragen.",
+            "greeting": "Hallo! Ik ben hier om naar je ervaring te luisteren. Alle reacties zijn anoniem. Vertel ons alsjeblieft...",
+            "fallbackStoryQuestion": "Vertel ons alsjeblieft je verhaal.",
+            "conclusion": "Hartelijk dank voor je deelname en voor het delen van je ervaring! Je bijdrage is erg waardevol."
+        }
+    },
+    "admin": {
+        "interviewer": {
+            "preview_title": "Interviewer Voorbeeld",
+            "preview_description": "Bekijk en test je interviewer-verzamelingsagent in realtime.",
+            "card_description": "Interactieve conversationele AI-verhaalenquête",
+            "create_prompt": "Maak eerst een verhaalvraag aan in de Ontwerpfase.",
+            "limit_title": "Limiet voor Alleen-ontwerpmodus bereikt",
+            "limit_reached": "Dit project heeft de limiet van 15 verhalen bereikt.",
+            "limit_explanation": "Projecten in de Alleen-ontwerpmodus zijn beperkt tot 15 verhalen. Lanceer het project om onbeperkte verzameling van verhalen mogelijk te maken."
+        },
+        "form": {
+            "preview_title": "Voorbeeld van verhalenformulier",
+            "preview_description": "Bekijk, test en ervaar uw verhalenformulier precies zoals deelnemers het zullen zien."
+        }
+    }
+}

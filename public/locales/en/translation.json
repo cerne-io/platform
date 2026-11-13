@@ -1,0 +1,118 @@
+{
+    "public": {
+        "title": "Share Your Story",
+        "loading": "Loading interview...",
+        "error": {
+            "load": "Unable to load interview",
+            "config": "This interview is not configured yet.",
+            "config_admin": "No story question found for this project.",
+            "contact": "Please contact the project owner."
+        },
+        "ready": {
+            "title": "Ready to Share Your Story",
+            "prompt": "We'd like to hear about:"
+        },
+        "button": {
+            "start": "Start Interview",
+            "starting": "Starting...",
+            "send": "Send",
+            "export": "Export",
+            "reset": "Reset",
+            "share_another": "Share Another Experience?",
+            "submit": "Submit Your Story",
+            "submitting": "Submitting...",
+            "skip": "Skip",
+            "submit_response": "Submit"
+        },
+        "status": {
+            "thinking": "Thinking...",
+            "completed": "Interview Completed & Saved!",
+            "thank_you": "Thank you for sharing your story."
+        },
+        "input": {
+            "placeholder": "Type your response here..."
+        },
+        "unavailable_domain": "This content is not available on this domain.",
+        "form": {
+            "write_story": "Write Story",
+            "record_story": "Record Story",
+            "your_story": "Your story",
+            "placeholder": "Tell us your story...",
+            "recording": {
+                "instructions_title": "Recording Instructions",
+                "instructions": "Click \"Start Recording\" and speak clearly into your microphone. When finished, click \"Finish\" to complete your recording.",
+                "error_title": "Recording Error",
+                "ready": "Audio recording ready for submission",
+                "permission_needed": "We need access to your microphone to show available devices and start recording.",
+                "enable_mic": "Enable Microphone Access",
+                "audio_saved_notice": "The audio response will be saved only so the survey creator can check or correct the transcription.",
+                "select_mic": "Microphone",
+                "choose_mic": "Select microphone",
+                "button": {
+                    "start": "Start Recording",
+                    "pause": "Pause",
+                    "resume": "Resume",
+                    "finish": "Finish"
+                }
+            },
+            "story_title": {
+                "label": "Add a title or hashtag for your story *",
+                "placeholder": "Give your story a meaningful title or hashtag"
+            },
+            "emotional_response": {
+                "question": "How do you feel about the experience you shared?",
+                "options": {
+                    "enthusiastic": "Enthusiastic",
+                    "confused": "Confused",
+                    "frustrated": "Frustrated",
+                    "engaged": "Engaged",
+                    "other": "Other"
+                },
+                "other_placeholder": "Describe how you felt..."
+            },
+            "card": {
+                "header_fallback": "Share Your Story",
+                "subheader_fallback": "Help us understand your experience by sharing your story below."
+            },
+            "comments": {
+                "label": "Is there anything else you would like to share about this experience?",
+                "placeholder": "Add any additional thoughts here..."
+            },
+            "headers": {
+                "about_experience": "About Your Experience",
+                "about_you": "About You",
+                "positioning_questions": "Positioning Questions"
+            },
+            "click_drag": "Click or drag to position your response",
+            "prefer_not_to_say": "Prefer not to say"
+        },
+        "interview": {
+            "askTitle": "Thank you for sharing your story! Could you give it a title or hashtag that captures its essence?",
+            "askEmotion": "Now, how do you feel about the experience you shared?",
+            "askAdditionalComments": "Thank you. Is there anything else you would like to share about this experience?",
+            "askAdditionalCommentsParticipant": "Thank you for answering those questions. Is there anything else you would like to share about this experience?",
+            "participantTransition": "Thank you for sharing. Before we conclude, I have a couple of additional questions to know more about you. You can always Skip those questions if you'd like.",
+            "concludingTransition": "You have completed all structured questions. Now ask ONE final open-ended question to capture any additional thoughts or experiences the participant would like to share.",
+            "transitionToSliders": "Thank you for sharing that context. Now I'd like to understand your experience on a few scales.",
+            "transitionToTriangles": "Thank you for sharing that context. Now I have a few positioning questions.",
+            "greeting": "Hello! I'm here to listen to your experience. All responses are anonymous. Please tell us...",
+            "fallbackStoryQuestion": "Please tell us your story.",
+            "conclusion": "Thank you so much for your participation and for sharing your experience! Your contribution is very valuable."
+        }
+    },
+    "admin": {
+        "interviewer": {
+            "preview_title": "Interviewer Preview",
+            "preview_description": "Preview and test your interviewer collection agent in real time.",
+            "card_description": "Interactive conversational AI narrative collection",
+            "create_prompt": "Please create a story question in the Design phase first.",
+            "limit_title": "Design-only Mode Limit Reached",
+            "limit_reached": "This project has reached its 15-story limit.",
+            "limit_explanation": "Projects in Design-only mode are limited to 15 stories. Launch the project to expand your story capacity."
+        },
+        "form": {
+            "preview_title": "Form Preview",
+            "preview_description": "Preview, test, and experience your story collection form exactly as participants will see it."
+        }
+    }
+}

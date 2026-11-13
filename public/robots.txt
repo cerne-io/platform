@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+Disallow: /projects/
+Disallow: /design/
+Disallow: /collect/
+Disallow: /form/
+Disallow: /explore/

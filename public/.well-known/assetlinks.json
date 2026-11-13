@@ -1,0 +1,15 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls",
+            "delegate_permission/common.get_login_creds"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "app.cerne_mobile_app",
+            "sha256_cert_fingerprints": [
+                "37:17:3F:C9:D1:19:85:1B:13:31:41:08:0D:99:50:F6:D8:7E:5A:A3:D5:B0:50:E8:DE:94:EB:72:79:C8:9E:D2"
+            ]
+        }
+    }
+]

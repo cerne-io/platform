@@ -1,0 +1,21 @@
+{
+  "deno.enable": false,
+  "deno.enablePaths": [
+    "supabase/functions"
+  ],
+  "deno.config": "./supabase/functions/deno.json",
+  "deno.lint": true,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.deno": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact"
+  ],
+  "css.lint.unknownAtRules": "ignore"
+}

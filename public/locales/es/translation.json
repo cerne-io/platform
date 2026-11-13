@@ -1,0 +1,118 @@
+{
+    "public": {
+        "title": "Comparte tu historia",
+        "loading": "Cargando entrevista...",
+        "error": {
+            "load": "No se pudo cargar la entrevista",
+            "config": "Esta entrevista aún no está configurada.",
+            "config_admin": "No se encontró ninguna pregunta de historia para este proyecto.",
+            "contact": "Por favor, contacte al propietario del proyecto."
+        },
+        "ready": {
+            "title": "Listo para compartir su historia",
+            "prompt": "Nos gustaría saber sobre:"
+        },
+        "button": {
+            "start": "Comenzar entrevista",
+            "starting": "Iniciando...",
+            "send": "Enviar",
+            "export": "Exportar",
+            "reset": "Restablecer",
+            "share_another": "¿Compartir otra experiencia?",
+            "submit": "Enviar su historia",
+            "submitting": "Enviando...",
+            "skip": "Omitir",
+            "submit_response": "Enviar"
+        },
+        "status": {
+            "thinking": "Pensando...",
+            "completed": "¡Entrevista completada y guardada!",
+            "thank_you": "Gracias por compartir su historia."
+        },
+        "input": {
+            "placeholder": "Escriba su respuesta aquí..."
+        },
+        "unavailable_domain": "Este contenido no está disponible en este dominio.",
+        "form": {
+            "write_story": "Escribir historia",
+            "record_story": "Grabar historia",
+            "your_story": "Su historia",
+            "placeholder": "Cuéntenos su historia...",
+            "recording": {
+                "instructions_title": "Instrucciones de grabación",
+                "instructions": "Haga clic en \"Iniciar grabación\" y hable con claridad en su micrófono. Cuando termine, haga clic en \"Finalizar\" para completar su grabación.",
+                "error_title": "Error de grabación",
+                "ready": "Grabación de audio lista para enviar",
+                "permission_needed": "Necesitamos acceso a su micrófono para mostrar los dispositivos disponibles e iniciar la grabación.",
+                "enable_mic": "Habilitar acceso al micrófono",
+                "audio_saved_notice": "La respuesta de audio se guardará únicamente para que el creador de la encuesta pueda verificar o corregir la transcripción.",
+                "select_mic": "Micrófono",
+                "choose_mic": "Seleccionar micrófono",
+                "button": {
+                    "start": "Iniciar grabación",
+                    "pause": "Pausa",
+                    "resume": "Reanudar",
+                    "finish": "Finalizar"
+                }
+            },
+            "story_title": {
+                "label": "Agregue un título o hashtag para su historia *",
+                "placeholder": "Asigne a su historia un título o hashtag significativo"
+            },
+            "emotional_response": {
+                "question": "¿Cómo se siente acerca de la experiencia que compartió?",
+                "options": {
+                    "enthusiastic": "Entusiasta",
+                    "confused": "Confundido",
+                    "frustrated": "Frustrado",
+                    "engaged": "Comprometido",
+                    "other": "Otro"
+                },
+                "other_placeholder": "Describa cómo se sintió..."
+            },
+            "card": {
+                "header_fallback": "Comparte tu historia",
+                "subheader_fallback": "Ayúdenos a comprender su experiencia compartiendo su historia a continuación."
+            },
+            "comments": {
+                "label": "¿Hay algo más que le gustaría compartir sobre esta experiencia?",
+                "placeholder": "Agregue cualquier pensamiento adicional aquí..."
+            },
+            "headers": {
+                "about_experience": "Sobre su experiencia",
+                "about_you": "Sobre usted",
+                "positioning_questions": "Preguntas de posicionamiento"
+            },
+            "click_drag": "Haga clic o arrastre para posicionar su respuesta",
+            "prefer_not_to_say": "Prefiero no decirlo"
+        },
+        "interview": {
+            "askTitle": "¡Gracias por compartir tu historia! ¿Podrías darle un título o hashtag que capture su esencia?",
+            "askEmotion": "Ahora, ¿cómo te sientes acerca de la experiencia que compartiste?",
+            "askAdditionalComments": "Gracias. ¿Hay algo más que te gustaría compartir sobre esta experiencia?",
+            "askAdditionalCommentsParticipant": "Gracias por responder a esas preguntas. ¿Hay algo más que te gustaría compartir sobre esta experiencia?",
+            "participantTransition": "Gracias por compartir. Antes de concluir, tengo un par de preguntas adicionales para conocerte mejor. Siempre puedes omitir esas preguntas si lo deseas.",
+            "concludingTransition": "Has completado todas las preguntas estructuradas. Ahora haz UNA última pregunta abierta para capturar cualquier pensamiento o experiencia adicional que el participante quisiera compartir.",
+            "transitionToSliders": "Gracias por compartir ese contexto. Ahora me gustaría entender tu experiencia en algunas escalas.",
+            "transitionToTriangles": "Gracias por compartir ese contexto. Ahora tengo algunas preguntas de posicionamiento.",
+            "greeting": "¡Hola! Estoy aquí para escuchar tu experiencia. Todas las respuestas son anónimas. Por favor, cuéntanos...",
+            "fallbackStoryQuestion": "Por favor, cuéntanos tu historia.",
+            "conclusion": "¡Muchas gracias por tu participación y por compartir tu experiencia! Tu contribución es muy valiosa."
+        }
+    },
+    "admin": {
+        "interviewer": {
+            "preview_title": "Vista previa del entrevistador",
+            "preview_description": "Previsualice y pruebe su agente de recopilación de entrevistas en tiempo real.",
+            "card_description": "Recopilación narrativa interactiva guiada por IA",
+            "create_prompt": "Primero, cree una pregunta para la historia en la fase de Diseño.",
+            "limit_title": "Límite del modo de solo diseño alcanzado",
+            "limit_reached": "Este proyecto ha alcanzado su límite de 15 historias.",
+            "limit_explanation": "Los proyectos en modo de solo diseño están limitados a 15 historias. Lance el proyecto para habilitar la recopilación ilimitada de historias."
+        },
+        "form": {
+            "preview_title": "Vista previa del formulario de historias",
+            "preview_description": "Previsualice, pruebe y experimente su formulario de recopilación de historias exactamente como lo verán los participantes."
+        }
+    }
+}

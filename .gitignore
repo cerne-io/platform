@@ -1,0 +1,117 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build & distribution
+dist
+dist-server
+dist-ssr
+data/
+cerne-data/
+*.local
+build
+out
+.output
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+
+# Testing & Test Artifacts
+coverage/
+.nyc_output
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-results/
+blob-report/
+.vitest/
+tests/load/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+localSecrets.ts
+**/localSecrets.ts
+
+# Supabase
+.supabase
+
+# Temporary files
+.temp/
+.tmp/
+temp/
+tmp/
+tmp_test/
+.cache/
+
+# Root scratchpads (anchored to root so nested unit tests are not ignored)
+scratch/
+/test_*.js
+/test_*.ts
+/scratch*.js
+/scratch*.ts
+
+# User uploads
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Backups, dumps & local certs
+*.sql
+*.pem
+*.key
+
+# Internal Review Files
+jules-review/
+jules/
+DASHBOARD_CAPABILITIES.md
+
+# Analysis & Lint Reports
+*.txt
+!README.md
+!overview.txt
+current_eslint_report.txt
+eslint_output.txt
+eslint_report.txt
+final_lint_output.txt
+lint_errors.txt
+lint_warnings.txt
+all_tsx_files.txt
+supabase/seed.sql
+supabase/.branches
+supabase/snippets
+
+# SonarQube
+.scannerwork/
+
+# Agents & Skills
+.agents/
+.taste-skill/
+.taste-skill*
+taste-skill-source/
+
+# Cache and boot state
+*.prewarm
+.prewarm
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)">
+  <title>Cerne OSS</title>
+  <meta name="description"
+    content="Cerne is an open-source narrative instrument for change agents to collect stories, map experiences, and visualize patterns.">
+  <meta name="author" content="Cerne OSS" />
+  <meta property="og:image" content="/og-image.png">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' http://127.0.0.1:* ws://127.0.0.1:* http://localhost:* ws://localhost:* blob: data:; media-src 'self' blob:; img-src 'self' data: https: blob:; worker-src 'self' blob:; frame-src 'self';">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Preload primary UI fonts to eliminate layout shift (FOUT) -->
+  <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Self-hosted fonts: Space Grotesk (Headings) + DM Sans (UI) + Crimson Pro (Quotes) — 100% private, zero Google IP tracking -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=2">
+
+  <meta name="twitter:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cerne OSS">
+  <meta name="twitter:title" content="Cerne OSS">
+  <meta property="og:description"
+    content="Cerne is an open-source narrative instrument for change agents to collect stories, map experiences, and visualize patterns.">
+  <meta name="twitter:description"
+    content="Cerne is an open-source narrative instrument for change agents to collect stories, map experiences, and visualize patterns.">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

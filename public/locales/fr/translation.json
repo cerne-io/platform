@@ -1,0 +1,118 @@
+{
+    "public": {
+        "title": "Partagez votre histoire",
+        "loading": "Chargement de l'entretien...",
+        "error": {
+            "load": "Impossible de charger l'entretien",
+            "config": "Cet entretien n'est pas encore configuré.",
+            "config_admin": "Aucune question d'histoire trouvée pour ce projet.",
+            "contact": "Veuillez contacter le propriétaire du projet."
+        },
+        "ready": {
+            "title": "Prêt à partager votre histoire",
+            "prompt": "Nous aimerions entendre parler de :"
+        },
+        "button": {
+            "start": "Commencer l'entretien",
+            "starting": "Démarrage...",
+            "send": "Envoyer",
+            "export": "Exporter",
+            "reset": "Réinitialiser",
+            "share_another": "Partager une autre expérience ?",
+            "submit": "Soumettre votre histoire",
+            "submitting": "Soumission...",
+            "skip": "Passer",
+            "submit_response": "Soumettre"
+        },
+        "status": {
+            "thinking": "Réflexion...",
+            "completed": "Entretien terminé et enregistré !",
+            "thank_you": "Merci d'avoir partagé votre histoire."
+        },
+        "input": {
+            "placeholder": "Tapez votre réponse ici..."
+        },
+        "unavailable_domain": "Ce contenu n'est pas disponible sur ce domaine.",
+        "form": {
+            "write_story": "Écrire l'histoire",
+            "record_story": "Enregistrer l'histoire",
+            "your_story": "Votre histoire",
+            "placeholder": "Racontez-nous votre histoire...",
+            "recording": {
+                "instructions_title": "Instructions d'enregistrement",
+                "instructions": "Cliquez sur \"Démarrer l'enregistrement\" et parlez clairement dans votre microphone. Une fois terminé, cliquez sur \"Terminer\" pour finaliser votre enregistrement.",
+                "error_title": "Erreur d'enregistrement",
+                "ready": "Enregistrement audio prêt pour la soumission",
+                "permission_needed": "Nous avons besoin d'accéder à votre microphone pour afficher les appareils disponibles et démarrer l'enregistrement.",
+                "enable_mic": "Activer l'accès au microphone",
+                "audio_saved_notice": "La réponse audio sera enregistrée uniquement pour permettre au créateur de l'enquête de vérifier ou corriger la transcription.",
+                "select_mic": "Microphone",
+                "choose_mic": "Sélectionner le microphone",
+                "button": {
+                    "start": "Démarrer l'enregistrement",
+                    "pause": "Pause",
+                    "resume": "Reprendre",
+                    "finish": "Terminer"
+                }
+            },
+            "story_title": {
+                "label": "Ajoutez un titre ou un hashtag pour votre histoire *",
+                "placeholder": "Donnez à votre histoire un titre ou un hashtag significatif"
+            },
+            "emotional_response": {
+                "question": "Que ressentez-vous par rapport à l'expérience que vous avez partagée ?",
+                "options": {
+                    "enthusiastic": "Enthousiaste",
+                    "confused": "Confus",
+                    "frustrated": "Frustré",
+                    "engaged": "Engagé",
+                    "other": "Autre"
+                },
+                "other_placeholder": "Décrivez ce que vous avez ressenti..."
+            },
+            "card": {
+                "header_fallback": "Partagez votre histoire",
+                "subheader_fallback": "Aidez-nous à comprendre votre expérience en partageant votre récit ci-dessous."
+            },
+            "comments": {
+                "label": "Y a-t-il autre chose que vous aimeriez partager à propos de cette expérience ?",
+                "placeholder": "Ajoutez d'autres pensées ici..."
+            },
+            "headers": {
+                "about_experience": "À propos de votre expérience",
+                "about_you": "À propos de vous",
+                "positioning_questions": "Questions de positionnement"
+            },
+            "click_drag": "Cliquez ou faites glisser pour positionner votre réponse",
+            "prefer_not_to_say": "Préfère ne pas répondre"
+        },
+        "interview": {
+            "askTitle": "Merci d'avoir partagé votre histoire ! Pourriez-vous lui donner un titre ou un hashtag qui en capture l'essence ?",
+            "askEmotion": "Maintenant, comment vous sentez-vous par rapport à l'expérience que vous avez partagée ?",
+            "askAdditionalComments": "Merci. Y a-t-il autre chose que vous aimeriez partager à propos de cette expérience ?",
+            "askAdditionalCommentsParticipant": "Merci d'avoir répondu à ces questions. Y a-t-il autre chose que vous aimeriez partager à propos de cette expérience ?",
+            "participantTransition": "Merci pour le partage. Avant de conclure, j'ai quelques questions supplémentaires pour mieux vous connaître. Vous pouvez toujours ignorer ces questions si vous le souhaitez.",
+            "concludingTransition": "Vous avez répondu à toutes les questions structurées. Posez maintenant UNE dernière question ouverte pour capturer toutes les pensées ou expériences supplémentaires que le participant souhaiterait partager.",
+            "transitionToSliders": "Merci d'avoir partagé ce contexte. J'aimerais maintenant comprendre votre expérience sur quelques échelles.",
+            "transitionToTriangles": "Merci d'avoir partagé ce contexte. J'ai maintenant quelques questions de positionnement.",
+            "greeting": "Bonjour ! Je suis ici pour écouter votre expérience. Toutes les réponses sont anonymes. S'il vous plaît, racontez-nous...",
+            "fallbackStoryQuestion": "S'il vous plaît, racontez-nous votre histoire.",
+            "conclusion": "Merci beaucoup pour votre participation et pour avoir partagé votre expérience ! Votre contribution est très précieuse."
+        }
+    },
+    "admin": {
+        "interviewer": {
+            "preview_title": "Aperçu de l'intervieweur",
+            "preview_description": "Prévisualisez et testez votre agent de collecte d'interviews en temps réel.",
+            "card_description": "Collecte narrative interactive par IA conversationnelle",
+            "create_prompt": "Veuillez d'abord créer une question d'histoire dans la phase de Conception.",
+            "limit_title": "Limite du mode Conception uniquement atteinte",
+            "limit_reached": "Ce projet a atteint sa limite de 15 histoires.",
+            "limit_explanation": "Les projets en mode Conception uniquement sont limités à 15 histoires. Lancez le projet pour permettre la collecte illimitée d'histoires."
+        },
+        "form": {
+            "preview_title": "Aperçu du formulaire d'histoires",
+            "preview_description": "Prévisualisez, testez et expérimentez votre formulaire de collecte d'histoires exactement tel que les participants le verront."
+        }
+    }
+}
